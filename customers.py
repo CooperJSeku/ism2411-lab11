@@ -1,17 +1,17 @@
 # Reflection 1:
-# I would use .get() when a key might not exist because it allows me
-# to provide a default value. I would use bracket notation when I know
-# the key exists and need its value. My rule of thumb is to use .get()
-# for optional information and brackets for required information.
+# I would use .get() when a key might not exist because it lets me
+# use a default value. I would use bracket notation when I know
+# the key exists and I need its value. My rule of thumb is to use .get()
+# for optional information and brackets for needed information.
 
 # Reflection 2:
-# This pattern reminds me of using SUMIF in Excel because it adds
-# amounts based on matching categories. Python can be more useful for
-# large datasets because it can automatically process many records
-# and handle more complicated calculations.
+# This pattern reminds me of using sumif in Excel because it adds
+# amounts based on matching groups. Python can be more useful for
+# large datasets because it can easily handle many records
+# and more complicated calculations and numbers.
 
 
-# EXERCISE 1 - One customer
+# EXERCISE 1 
 
 customer = {
     "name": "Alice",
@@ -28,7 +28,7 @@ print(customer["ytd_spend"])
 print(customer)
 
 
-# EXERCISE 2 - Update and add
+# EXERCISE 2
 
 print("\nEXERCISE 2")
 
@@ -42,7 +42,7 @@ del customer["email"]
 print(customer)
 
 
-# EXERCISE 3 - Safe lookup
+# EXERCISE 3 
 
 print("\nEXERCISE 3")
 
@@ -55,19 +55,19 @@ except KeyError:
     print("KeyError: email does not exist")
 
 
-# EXERCISE 4 - Iterate
+# EXERCISE 4 
 
 print("\nEXERCISE 4")
 
 for key, value in customer.items():
     print(f"{key}: {value}")
 
-# Without .items(), the loop gives only the keys.
+# Without the .items(), the loop gave only the keys.
 for key in customer:
     print(key)
 
 
-# EXERCISE 5 - Lookup table
+# EXERCISE 5 
 
 print("\nEXERCISE 5")
 
@@ -88,7 +88,7 @@ print("Discount rate:", discount_rate * 100, "%")
 print("Final price: $", round(final_price, 2))
 
 
-# EXERCISE 6 - List of dicts
+# EXERCISE 6 
 
 print("\nEXERCISE 6")
 
@@ -109,7 +109,7 @@ for person in customers:
     )
 
 
-# EXERCISE 7 - Nested catalog
+# EXERCISE 7 
 
 print("\nEXERCISE 7")
 
@@ -123,7 +123,7 @@ for product, details in catalog.items():
         print(f"LOW STOCK: {product} - {details['stock']} remaining")
 
 
-# EXERCISE 8 - Sales by region
+# EXERCISE 8 
 
 print("\nEXERCISE 8")
 
